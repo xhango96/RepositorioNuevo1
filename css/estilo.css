@@ -78,7 +78,7 @@ header {
 }
 
 
-                        /*NAV*/
+                        /*NAV GENERAL*/
 
 
 nav{
@@ -121,8 +121,28 @@ nav ul li a{
 
 nav ul li a:hover{
     background-color: #87ddbc; 
+    
 }
 
+
+
+/*NAVBAR ELABORACION BOOTSTRAP*/
+
+.navbar{
+    list-style: none;
+    
+}
+
+.navbar li a{
+    color: #ffffff;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar li a:hover{
+    background-color: #87ddbc; 
+}
 
 
 
@@ -464,16 +484,6 @@ main{
     width: 500px;
     justify-content: center;
 }
-
-
-
-
-
-.barraNav{
-    padding-left: 0px;
-}
-
-
 
 
 
