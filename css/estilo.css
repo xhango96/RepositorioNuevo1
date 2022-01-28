@@ -501,11 +501,11 @@ main{
 }
 
 
-#padreUnoProductos{
+#padreUnoProductos{    
     display: grid;
     width: 100%;
     height: 500px;
-    background-color: rgb(87, 161, 245);
+    background-color: rgb(87, 161, 245);    
     grid-template-columns: 50% 50%;
     grid-template-rows:    1fr 1fr;
     grid-template-areas:"foto1 foto2"
@@ -535,6 +535,7 @@ main{
 }
 
 #hijoTres{
+    
     background-color: rgb(41, 84, 163);
     grid-area: foto2;
     height: 70%;
@@ -547,6 +548,7 @@ main{
     height: 70%;
     width: 30%;
 }
+
 
 img{
     width: 100%;
@@ -562,6 +564,7 @@ img{
     background-color: #0FB283;
     cursor: pointer; 
 }
+
 
 #cepilloMano{
     text-align: center;
