@@ -131,6 +131,15 @@ nav ul li a:hover{
 .navbar{
     list-style: none;
     
+    
+}
+
+.navbar ul li{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+    
+
 }
 
 .navbar li a{
@@ -138,10 +147,13 @@ nav ul li a:hover{
     padding: 15px;
     font-size: 20px;
     text-align: center;
+    text-decoration: none;   
+     
 }
 
 .navbar li a:hover{
     background-color: #87ddbc; 
+    
 }
 
 
@@ -264,7 +276,7 @@ main{
     grid-template-rows: 1fr;
     grid-template-areas: "foto1 foto2 foto3 foto4";
     justify-items: center;    
-    column-gap: 10px;   
+    column-gap: 5px;   
     
 }
 
@@ -291,6 +303,7 @@ main{
 
 #fotoCuatro{    
     height: 50%;
+    width: 60%;
     grid-area: foto4;
     cursor: pointer;
 }
@@ -466,8 +479,15 @@ main{
 .videoElaboracion{
     padding-left: 100px;
     padding-top: 70px;
+    display: grid;
     
     
+}
+
+iframe {
+    max-width: 100%;
+    height: 700px;
+    width: 700px;
 }
 
 .asideElaboracion{
@@ -477,12 +497,6 @@ main{
     font-size: 30px;
     text-shadow: 5px 5px 10px #000;
 
-}
-
-#carousel{
-    height: 200px;
-    width: 500px;
-    justify-content: center;
 }
 
 
@@ -500,7 +514,6 @@ main{
 
 }
 
-
 #padreUnoProductos{    
     display: grid;
     width: 100%;
@@ -511,7 +524,7 @@ main{
     grid-template-areas:"foto1 foto2"
                         "foto3 foto4"; 
 
-    column-gap: 10px;
+    
     row-gap: 10px;    
     justify-items: center;
     align-items: center;
@@ -523,7 +536,7 @@ main{
 #hijoUno{
     background-color: aqua;
     grid-area: foto3;
-    height: 70%;
+    height: 80%;
     width: 30%;
 }
 
@@ -545,7 +558,7 @@ main{
 #hijoCuatro{
     background-color: rgb(34, 50, 189);
     grid-area: foto4;
-    height: 70%;
+    height: 80%;
     width: 30%;
 }
 
@@ -587,7 +600,7 @@ img{
 #amonioCombo{
     text-align: center;
     color: white;
-    font-size: 100%;
+    font-size: 100%;    
     background-color: #0FB283;
     cursor: pointer;
 }
@@ -651,5 +664,94 @@ footer{
 
 
 
+/*RESPONSIVE (POR AHORA SOLO LA SECCION DE PRODUCTOS)*/
+
+#headerProductos{
+    background-image: url(../img/burbujas.jpg); 
+
+}
+
+#navProductos{
+    background-color: #0FB283;
+}
+
+#ulProductos{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+
+}
+
+#liProductos{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainProductos{
+
+    background-color: rgb(87, 161, 245); 
+    
+
+}
+
+#footerProductos{
+    background-color: #0FB283;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width:600px){
+    headerProductos{
+        height: 400px;
+
+    }
+
+    navProductos{
+        height: 200px;
+        
+    }
+
+    ulProductos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    liProductos{
+        height: 15%;
+        
+    }
+}
+
+
+/*TABLETS*/
+@media only screen and (min-width: 600px){    
+
+    headerProductos{
+        height: 500px;
+    }
+
+    navProductos{
+        height: 100px;
+        text-align: center;
+        
+    
+    }
+
+    ulProductos{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;    
+
+    }
+
+     }
 
 
