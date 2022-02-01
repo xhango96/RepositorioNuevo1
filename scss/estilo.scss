@@ -95,17 +95,13 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-                            
-                        
+    align-items: center;                           
 }
                         
 nav ul li{
     display: inline-block;
     width: 10%;
-    height: 100%;
-                            
-                        
+    height: 100%;                                                  
 }
                         
                         
@@ -114,14 +110,11 @@ nav ul li a{
     text-decoration: none;
     display: block;
     padding-top: 20px;
-    height: 30px;
-                            
-                        
+    height: 30px;                                                   
 }
                         
 nav ul li a:hover{
-    background-color: #87ddbc; 
-                            
+    background-color: #87ddbc;                             
 }
                         
                         
@@ -173,37 +166,41 @@ main{
     position: fixed;
     right: 10px;
     bottom: 10px;
-    border-radius: 500%;                          
+    border-radius: 500%;
+    
+    .chat img{
+        width: 100%;
+        height: auto;
+    }
                                                    
 }
                         
-.chat img{
-    width: 100%;
-    height: auto;
-}
+
                         
                                                 /*CONTACTO*/
                         
-#tituloContacto{
-    text-align: center;
-    font-size: 50px;
-    color: #ffff;
-    padding-bottom: 10px;
-    text-shadow: 5px 5px 10px #000;
-    padding-top: 30px;                        
-                           
-}
-                        
-                        
-#contacto{
-    text-align: center;
-}
-                        
+                   
 #mainContacto{
     align-items: center;
     justify-content: center;
     font-size: 20px;
     height: 800px;
+
+    #tituloContacto{
+        text-align: center;
+        font-size: 50px;
+        color: #ffff;
+        padding-bottom: 10px;
+        text-shadow: 5px 5px 10px #000;
+        padding-top: 30px;                        
+                               
+    }
+
+    #contacto{
+        text-align: center;
+    }
+       
+   
                             
 }
                         
@@ -270,67 +267,88 @@ main{
     grid-template-areas: "foto1 foto2 foto3 foto4";
     justify-items: center;    
     column-gap: 5px;   
-    
-}
 
+    #fotoUno{    
+        height: 50%;
+        grid-area: foto1;   
+        cursor: pointer;
 
+        #esponjaAcero{
+            text-align: center;
+            color: white;
+            font-size: 150%;
+            background-color: #0FB283;
+            cursor: pointer;
+        }
 
-#fotoUno{    
-    height: 50%;
-    grid-area: foto1;   
-    cursor: pointer;
+        #linkProductoUno{
+            background-color: #0FB283;
         
-}
+        }
+            
+    }
+    
+    #fotoDos{    
+        height: 50%;
+        grid-area: foto2;
+        cursor: pointer;
 
-#fotoDos{    
-    height: 50%;
-    grid-area: foto2;
-    cursor: pointer;
-}
+        #esponjaColores{
+            text-align: center;
+            color: white;
+            font-size: 150%;
+            background-color: #0FB283;
+            cursor: pointer;
+        }
 
-#fotoTres{    
-    height: 50%;
-    grid-area: foto3;
-    cursor: pointer;
-}
+        #linkProductoDos{
+            background-color: #0FB283;
+        
+        }
+    }
 
-#fotoCuatro{    
-    height: 50%;
-    width: 60%;
-    grid-area: foto4;
-    cursor: pointer;
-}
+    #fotoTres{    
+        height: 50%;
+        grid-area: foto3;
+        cursor: pointer;
 
-#esponjaAcero{
-    text-align: center;
-    color: white;
-    font-size: 150%;
-    background-color: #0FB283;
-    cursor: pointer;
-}
+        #mopaAcero{
+            text-align: center;
+            color: white;
+            font-size: 150%;
+            background-color: #0FB283;
+            cursor: pointer;
+        }
 
-#esponjaColores{
-    text-align: center;
-    color: white;
-    font-size: 150%;
-    background-color: #0FB283;
-    cursor: pointer;
-}
+        #linkProductoTres{
+            background-color: #0FB283;
+        
+        }
+        
 
-#mopaAcero{
-    text-align: center;
-    color: white;
-    font-size: 150%;
-    background-color: #0FB283;
-    cursor: pointer;
-}
+        
+    }
+    
+    #fotoCuatro{    
+        height: 50%;
+        width: 60%;
+        grid-area: foto4;
+        cursor: pointer;
 
-#cepilloinodoro{
-    text-align: center;
-    color: white;
-    font-size: 150%;
-    background-color: #0FB283;
-    cursor: pointer;
+        #cepilloinodoro{
+            text-align: center;
+            color: white;
+            font-size: 150%;
+            background-color: #0FB283;
+            cursor: pointer;
+        }
+
+        #linkProductoCuatro{
+            background-color: #0FB283;
+        
+        }
+    }
+
 }
 
 .linkProducto{
@@ -339,87 +357,57 @@ main{
     
 }
 
-#linkProductoUno{
-    background-color: #0FB283;
-
-}
-
-#linkProductoDos{
-    background-color: #0FB283;
-
-}
-
-#linkProductoTres{
-    background-color: #0FB283;
-
-}
-
-#linkProductoCuatro{
-    background-color: #0FB283;
-
-}
-
-
-
-
-
                         /*DELIVERY*/
 
-#tituloDelivery{
-    color: #ffffff;    
-    font-size: 40px;
-    text-align: center;
-    padding-top: 20px;
-    text-shadow: 5px 5px 10px #000;
-}
 
 #maps{
     text-align: center;
     border: 2px black;   
         
-}
+    #tituloDelivery{
+        color: #ffffff;    
+        font-size: 40px;
+        text-align: center;
+        padding-top: 20px;
+        text-shadow: 5px 5px 10px #000;
+    }
 
-#domicilio{
+    #domicilio{
     
-    text-align: left;
-    font-size: 30px;
-    margin-left: 100px;
-    color: rgb(255, 255, 255);
-}
+        text-align: left;
+        font-size: 30px;
+        margin-left: 100px;
+        color: rgb(255, 255, 255);
+    }
 
-#domicilioDos{
-    text-align: left;    
-    margin-left: 100px;
+    #domicilioDos{
+        text-align: left;    
+        margin-left: 100px;
 
+        .inputDomicilio:focus{
+            width: 300px;
+            font-size: 25px;
+            transition: all 2s;
+        }
+        
+    }
 
-}
-
-.inputDomicilio:focus{
-    width: 300px;
-    font-size: 25px;
-    transition: all 2s;
-}
-
-
-
-#confirmacion{
-    text-align: left;
-    font-size: 20px;
-    margin-left: 100px;
-    color: rgb(255, 255, 255);
-    margin-top: 50px;
-}
-
-
-.textoRangoEnvios{
-    text-align: center;
-    color: white;    
-    background-image: radial-gradient(circle, #0FB283, rgb(87, 161, 245));
+    #confirmacion{
+        text-align: left;
+        font-size: 20px;
+        margin-left: 100px;
+        color: rgb(255, 255, 255);
+        margin-top: 50px;
+    }
     
-    
+    .textoRangoEnvios{
+        text-align: center;
+        color: white;    
+        background-image: radial-gradient(circle, #0FB283, rgb(87, 161, 245));  
+        
+    }
     
 }
-
 
 
 
@@ -431,22 +419,36 @@ main{
     grid-template-rows: 1fr;
     grid-template-areas: "subtitulo" "videoElaboracion";                        
 
+    
+    #tituloElaboracionDos{
+        color: #ffffff;    
+        font-size: 40px;
+        text-align: left;
+        padding-left: 120px;
+        text-shadow: 5px 5px 10px #000;
+    }
+
+    .textoLorem{
+        grid-area: videoElaboracion;    
+        color: #ffffff;    
+        font-size: 30px;
+        text-shadow: 5px 5px 10px #000;
+        padding-left: 120px;
+    }
+
+    .videoElaboracion{
+        padding-left: 100px;
+        padding-top: 70px;
+        display: grid;   
+
+        iframe {
+            max-width: 100%;
+            height: 700px;
+            width: 700px;
+        }
+    }
 
 }
-
-.textoLorem{
-    grid-area: videoElaboracion;    
-    color: #ffffff;    
-    font-size: 30px;
-    text-shadow: 5px 5px 10px #000;
-    padding-left: 120px;
-}
-
-
-
-
-
-
 
 
 #tituloElaboracion{
@@ -459,29 +461,6 @@ main{
     text-align: center;
 }
 
-
-#tituloElaboracionDos{
-    color: #ffffff;    
-    font-size: 40px;
-    text-align: left;
-    padding-left: 120px;
-    text-shadow: 5px 5px 10px #000;
-}
-
-
-.videoElaboracion{
-    padding-left: 100px;
-    padding-top: 70px;
-    display: grid;
-    
-    
-}
-
-iframe {
-    max-width: 100%;
-    height: 700px;
-    width: 700px;
-}
 
 .asideElaboracion{
     color: #ffffff;
@@ -523,81 +502,74 @@ iframe {
     align-items: center;
     text-align: center;
    
+    #hijoUno{
+        background-color: aqua;
+        grid-area: foto3;
+        height: 80%;
+        width: 30%;
+
+        #amonioUno{
+            text-align: center;
+            color: white;
+            font-size: 100%;
+            background-color: #0FB283;
+            cursor: pointer; 
+        }
+    }
     
-}
+    #hijoDos{
+        background-color: rgb(54, 131, 194);
+        grid-area: foto1;
+        height: 70%;
+        width: 30%;
 
-#hijoUno{
-    background-color: aqua;
-    grid-area: foto3;
-    height: 80%;
-    width: 30%;
-}
+        #cepilloMano{
+            text-align: center;
+            color: white;
+            font-size: 100%;
+            background-color: #0FB283;
+            cursor: pointer;    
+        }
+    }
 
-#hijoDos{
-    background-color: rgb(54, 131, 194);
-    grid-area: foto1;
-    height: 70%;
-    width: 30%;
-}
-
-#hijoTres{
+    #hijoTres{
     
-    background-color: rgb(41, 84, 163);
-    grid-area: foto2;
-    height: 70%;
-    width: 30%;
+        background-color: rgb(41, 84, 163);
+        grid-area: foto2;
+        height: 70%;
+        width: 30%;
+
+        #escobaUno{
+            text-align: center;
+            color: white;
+            font-size: 100%;
+            background-color: #0FB283;
+            cursor: pointer;    
+        }
+    }
+
+    #hijoCuatro{
+        background-color: rgb(34, 50, 189);
+        grid-area: foto4;
+        height: 80%;
+        width: 30%;
+
+        #amonioCombo{
+            text-align: center;
+            color: white;
+            font-size: 100%;    
+            background-color: #0FB283;
+            cursor: pointer;
+        }
+    }
 }
 
-#hijoCuatro{
-    background-color: rgb(34, 50, 189);
-    grid-area: foto4;
-    height: 80%;
-    width: 30%;
-}
 
 
 img{
     width: 100%;
     height: 100%;
 }
-
-
-
-#amonioUno{
-    text-align: center;
-    color: white;
-    font-size: 100%;
-    background-color: #0FB283;
-    cursor: pointer; 
-}
-
-
-#cepilloMano{
-    text-align: center;
-    color: white;
-    font-size: 100%;
-    background-color: #0FB283;
-    cursor: pointer;
-    
-}
-
-#escobaUno{
-    text-align: center;
-    color: white;
-    font-size: 100%;
-    background-color: #0FB283;
-    cursor: pointer;
-    
-}
-
-#amonioCombo{
-    text-align: center;
-    color: white;
-    font-size: 100%;    
-    background-color: #0FB283;
-    cursor: pointer;
-}
-
 
 
 
@@ -622,6 +594,24 @@ footer{
     flex-direction: row;
     justify-content: left;
 
+    .facebookIcon:hover{
+    
+        width: 70px;
+        transition: all 1s;
+    }
+
+    .instagramIcon:hover{
+    
+        width: 70px;
+        transition: all 1s;
+    }
+
+    .whatsappIcon:hover{
+    
+        width: 70px;
+        transition: all 1s;
+    }
+
 }
 
 .social img{
@@ -636,23 +626,6 @@ footer{
     
 }
 
-.facebookIcon:hover{
-    
-    width: 70px;
-    transition: all 1s;
-}
-
-.instagramIcon:hover{
-    
-    width: 70px;
-    transition: all 1s;
-}
-
-.whatsappIcon:hover{
-    
-    width: 70px;
-    transition: all 1s;
-}
 
 
 

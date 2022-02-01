@@ -111,28 +111,25 @@ main {
   right: 10px;
   bottom: 10px;
   border-radius: 500%; }
-
-.chat img {
-  width: 100%;
-  height: auto; }
+  .chat .chat img {
+    width: 100%;
+    height: auto; }
 
 /*CONTACTO*/
-#tituloContacto {
-  text-align: center;
-  font-size: 50px;
-  color: #ffff;
-  padding-bottom: 10px;
-  text-shadow: 5px 5px 10px #000;
-  padding-top: 30px; }
-
-#contacto {
-  text-align: center; }
-
 #mainContacto {
   align-items: center;
   justify-content: center;
   font-size: 20px;
   height: 800px; }
+  #mainContacto #tituloContacto {
+    text-align: center;
+    font-size: 50px;
+    color: #ffff;
+    padding-bottom: 10px;
+    text-shadow: 5px 5px 10px #000;
+    padding-top: 30px; }
+  #mainContacto #contacto {
+    text-align: center; }
 
 #botonLimpiar {
   background: white;
@@ -178,110 +175,92 @@ main {
   grid-template-areas: "foto1 foto2 foto3 foto4";
   justify-items: center;
   column-gap: 5px; }
-
-#fotoUno {
-  height: 50%;
-  grid-area: foto1;
-  cursor: pointer; }
-
-#fotoDos {
-  height: 50%;
-  grid-area: foto2;
-  cursor: pointer; }
-
-#fotoTres {
-  height: 50%;
-  grid-area: foto3;
-  cursor: pointer; }
-
-#fotoCuatro {
-  height: 50%;
-  width: 60%;
-  grid-area: foto4;
-  cursor: pointer; }
-
-#esponjaAcero {
-  text-align: center;
-  color: white;
-  font-size: 150%;
-  background-color: #0FB283;
-  cursor: pointer; }
-
-#esponjaColores {
-  text-align: center;
-  color: white;
-  font-size: 150%;
-  background-color: #0FB283;
-  cursor: pointer; }
-
-#mopaAcero {
-  text-align: center;
-  color: white;
-  font-size: 150%;
-  background-color: #0FB283;
-  cursor: pointer; }
-
-#cepilloinodoro {
-  text-align: center;
-  color: white;
-  font-size: 150%;
-  background-color: #0FB283;
-  cursor: pointer; }
+  #padreImgInicio #fotoUno {
+    height: 50%;
+    grid-area: foto1;
+    cursor: pointer; }
+    #padreImgInicio #fotoUno #esponjaAcero {
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      background-color: #0FB283;
+      cursor: pointer; }
+    #padreImgInicio #fotoUno #linkProductoUno {
+      background-color: #0FB283; }
+  #padreImgInicio #fotoDos {
+    height: 50%;
+    grid-area: foto2;
+    cursor: pointer; }
+    #padreImgInicio #fotoDos #esponjaColores {
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      background-color: #0FB283;
+      cursor: pointer; }
+    #padreImgInicio #fotoDos #linkProductoDos {
+      background-color: #0FB283; }
+  #padreImgInicio #fotoTres {
+    height: 50%;
+    grid-area: foto3;
+    cursor: pointer; }
+    #padreImgInicio #fotoTres #mopaAcero {
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      background-color: #0FB283;
+      cursor: pointer; }
+    #padreImgInicio #fotoTres #linkProductoTres {
+      background-color: #0FB283; }
+  #padreImgInicio #fotoCuatro {
+    height: 50%;
+    width: 60%;
+    grid-area: foto4;
+    cursor: pointer; }
+    #padreImgInicio #fotoCuatro #cepilloinodoro {
+      text-align: center;
+      color: white;
+      font-size: 150%;
+      background-color: #0FB283;
+      cursor: pointer; }
+    #padreImgInicio #fotoCuatro #linkProductoCuatro {
+      background-color: #0FB283; }
 
 .linkProducto {
   text-align: center;
   color: #212cc7; }
 
-#linkProductoUno {
-  background-color: #0FB283; }
-
-#linkProductoDos {
-  background-color: #0FB283; }
-
-#linkProductoTres {
-  background-color: #0FB283; }
-
-#linkProductoCuatro {
-  background-color: #0FB283; }
-
 /*DELIVERY*/
-#tituloDelivery {
-  color: #ffffff;
-  font-size: 40px;
-  text-align: center;
-  padding-top: 20px;
-  text-shadow: 5px 5px 10px #000; }
-
 #maps {
   text-align: center;
   border: 2px black; }
-
-#domicilio {
-  text-align: left;
-  font-size: 30px;
-  margin-left: 100px;
-  color: white; }
-
-#domicilioDos {
-  text-align: left;
-  margin-left: 100px; }
-
-.inputDomicilio:focus {
-  width: 300px;
-  font-size: 25px;
-  transition: all 2s; }
-
-#confirmacion {
-  text-align: left;
-  font-size: 20px;
-  margin-left: 100px;
-  color: white;
-  margin-top: 50px; }
-
-.textoRangoEnvios {
-  text-align: center;
-  color: white;
-  background-image: radial-gradient(circle, #0FB283, #57a1f5); }
+  #maps #tituloDelivery {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 10px #000; }
+  #maps #domicilio {
+    text-align: left;
+    font-size: 30px;
+    margin-left: 100px;
+    color: white; }
+  #maps #domicilioDos {
+    text-align: left;
+    margin-left: 100px; }
+    #maps #domicilioDos .inputDomicilio:focus {
+      width: 300px;
+      font-size: 25px;
+      transition: all 2s; }
+  #maps #confirmacion {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 100px;
+    color: white;
+    margin-top: 50px; }
+  #maps .textoRangoEnvios {
+    text-align: center;
+    color: white;
+    background-image: radial-gradient(circle, #0FB283, #57a1f5); }
 
 /*ELABORACION*/
 #padreUnoElaboracion {
@@ -289,13 +268,26 @@ main {
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
   grid-template-areas: "subtitulo" "videoElaboracion"; }
-
-.textoLorem {
-  grid-area: videoElaboracion;
-  color: #ffffff;
-  font-size: 30px;
-  text-shadow: 5px 5px 10px #000;
-  padding-left: 120px; }
+  #padreUnoElaboracion #tituloElaboracionDos {
+    color: #ffffff;
+    font-size: 40px;
+    text-align: left;
+    padding-left: 120px;
+    text-shadow: 5px 5px 10px #000; }
+  #padreUnoElaboracion .textoLorem {
+    grid-area: videoElaboracion;
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px #000;
+    padding-left: 120px; }
+  #padreUnoElaboracion .videoElaboracion {
+    padding-left: 100px;
+    padding-top: 70px;
+    display: grid; }
+    #padreUnoElaboracion .videoElaboracion iframe {
+      max-width: 100%;
+      height: 700px;
+      width: 700px; }
 
 #tituloElaboracion {
   color: #ffffff;
@@ -305,23 +297,6 @@ main {
   text-shadow: 5px 5px 10px #000;
   grid-area: subtitulo;
   text-align: center; }
-
-#tituloElaboracionDos {
-  color: #ffffff;
-  font-size: 40px;
-  text-align: left;
-  padding-left: 120px;
-  text-shadow: 5px 5px 10px #000; }
-
-.videoElaboracion {
-  padding-left: 100px;
-  padding-top: 70px;
-  display: grid; }
-
-iframe {
-  max-width: 100%;
-  height: 700px;
-  width: 700px; }
 
 .asideElaboracion {
   color: #ffffff;
@@ -350,62 +325,54 @@ iframe {
   justify-items: center;
   align-items: center;
   text-align: center; }
-
-#hijoUno {
-  background-color: aqua;
-  grid-area: foto3;
-  height: 80%;
-  width: 30%; }
-
-#hijoDos {
-  background-color: #3683c2;
-  grid-area: foto1;
-  height: 70%;
-  width: 30%; }
-
-#hijoTres {
-  background-color: #2954a3;
-  grid-area: foto2;
-  height: 70%;
-  width: 30%; }
-
-#hijoCuatro {
-  background-color: #2232bd;
-  grid-area: foto4;
-  height: 80%;
-  width: 30%; }
+  #padreUnoProductos #hijoUno {
+    background-color: aqua;
+    grid-area: foto3;
+    height: 80%;
+    width: 30%; }
+    #padreUnoProductos #hijoUno #amonioUno {
+      text-align: center;
+      color: white;
+      font-size: 100%;
+      background-color: #0FB283;
+      cursor: pointer; }
+  #padreUnoProductos #hijoDos {
+    background-color: #3683c2;
+    grid-area: foto1;
+    height: 70%;
+    width: 30%; }
+    #padreUnoProductos #hijoDos #cepilloMano {
+      text-align: center;
+      color: white;
+      font-size: 100%;
+      background-color: #0FB283;
+      cursor: pointer; }
+  #padreUnoProductos #hijoTres {
+    background-color: #2954a3;
+    grid-area: foto2;
+    height: 70%;
+    width: 30%; }
+    #padreUnoProductos #hijoTres #escobaUno {
+      text-align: center;
+      color: white;
+      font-size: 100%;
+      background-color: #0FB283;
+      cursor: pointer; }
+  #padreUnoProductos #hijoCuatro {
+    background-color: #2232bd;
+    grid-area: foto4;
+    height: 80%;
+    width: 30%; }
+    #padreUnoProductos #hijoCuatro #amonioCombo {
+      text-align: center;
+      color: white;
+      font-size: 100%;
+      background-color: #0FB283;
+      cursor: pointer; }
 
 img {
   width: 100%;
   height: 100%; }
-
-#amonioUno {
-  text-align: center;
-  color: white;
-  font-size: 100%;
-  background-color: #0FB283;
-  cursor: pointer; }
-
-#cepilloMano {
-  text-align: center;
-  color: white;
-  font-size: 100%;
-  background-color: #0FB283;
-  cursor: pointer; }
-
-#escobaUno {
-  text-align: center;
-  color: white;
-  font-size: 100%;
-  background-color: #0FB283;
-  cursor: pointer; }
-
-#amonioCombo {
-  text-align: center;
-  color: white;
-  font-size: 100%;
-  background-color: #0FB283;
-  cursor: pointer; }
 
 /*FOOTER*/
 footer {
@@ -422,6 +389,15 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: left; }
+  .Footer-social ul li .facebookIcon:hover {
+    width: 70px;
+    transition: all 1s; }
+  .Footer-social ul li .instagramIcon:hover {
+    width: 70px;
+    transition: all 1s; }
+  .Footer-social ul li .whatsappIcon:hover {
+    width: 70px;
+    transition: all 1s; }
 
 .social img {
   width: 50px;
@@ -430,18 +406,6 @@ footer {
 
 .social img:hover {
   opacity: 50%; }
-
-.facebookIcon:hover {
-  width: 70px;
-  transition: all 1s; }
-
-.instagramIcon:hover {
-  width: 70px;
-  transition: all 1s; }
-
-.whatsappIcon:hover {
-  width: 70px;
-  transition: all 1s; }
 
 /*RESPONSIVE (POR AHORA SOLO LA SECCION DE PRODUCTOS)*/
 #headerProductos {
