@@ -1,0 +1,749 @@
+
+                     /* GENERAL*/
+
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 104%;
+                            
+}
+                        
+                        
+                        
+                        
+                                                /*HEADER*/ 
+                        
+header {
+    height: 30vh;
+    background-color: #02BDDC;
+    color: #ffff;
+    text-align: center;
+    background-image: url(../img/burbujas.jpg);    
+    background-size: cover;
+                            
+                        
+                        
+}
+                        
+                        /*
+                        .final{
+                            display: flex;
+                            width: 900px;
+                            text-align: center;
+                            height: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        */
+                        
+                        
+                        
+                                                /*LOGO*/
+                        
+.Logo {
+    display: flex;
+    flex-direction: row; 
+    position: absolute;
+    top: 0;
+    left: 1px;
+    padding-left: 1vh;
+                               
+                            
+                        
+}
+                        
+.imagenLogo{
+    height: 180px; 
+    display: flex;
+    flex-direction: row;    
+}
+                        
+                        
+.imagenLogo p{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    text-shadow: 5px 5px 10px #000;    
+}
+                        
+                        
+                        
+.imagenLogo img {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row; 
+                            
+}
+                        
+                        
+                                                /*NAV GENERAL*/
+                        
+                        
+nav{
+    background-color: #0FB283;
+    height: 50px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+                            
+}
+                        
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+                            
+                        
+}
+                        
+nav ul li{
+    display: inline-block;
+    width: 10%;
+    height: 100%;
+                            
+                        
+}
+                        
+                        
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding-top: 20px;
+    height: 30px;
+                            
+                        
+}
+                        
+nav ul li a:hover{
+    background-color: #87ddbc; 
+                            
+}
+                        
+                        
+                        
+                        /*NAVBAR ELABORACION BOOTSTRAP*/
+                        
+.navbar{
+    list-style: none;                           
+                            
+}
+                        
+.navbar ul li{
+    display: inline-block;
+    width: 10%;
+    height: 100%;                           
+                        
+}
+                        
+.navbar li a{
+    color: #ffffff;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;   
+                             
+}
+                        
+.navbar li a:hover{
+    background-color: #87ddbc; 
+                            
+}
+                        
+                        
+                        
+                        
+                                                /*MAIN*/
+                        
+                        
+main{
+    height: 2000px;
+    background-color: rgb(87, 161, 245);                                               
+}
+                        
+                        
+                        
+                                                /*CHAT WHATSAPP*/
+.chat{
+    width: 100px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 500%;                          
+                                                   
+}
+                        
+.chat img{
+    width: 100%;
+    height: auto;
+}
+                        
+                                                /*CONTACTO*/
+                        
+#tituloContacto{
+    text-align: center;
+    font-size: 50px;
+    color: #ffff;
+    padding-bottom: 10px;
+    text-shadow: 5px 5px 10px #000;
+    padding-top: 30px;                        
+                           
+}
+                        
+                        
+#contacto{
+    text-align: center;
+}
+                        
+#mainContacto{
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 800px;
+                            
+}
+                        
+#botonLimpiar{
+    background: rgb(255, 255, 255);
+    cursor: pointer; 
+                            
+}
+                        
+#botonFinalizar{
+    background: rgb(255, 255, 255);    
+    cursor: pointer;
+}
+
+.red{
+    color: red;
+}
+
+.tablaContacto{
+    text-align: center;
+    height: 600px;
+    
+    
+}
+
+.comentarioContacto{
+    transition: height 3s;
+    height: 50px;
+    text-align: center;
+}
+
+.comentarioContacto:focus{
+    height: 100px;
+}
+
+
+
+
+
+
+
+                        /*INICIO*/
+
+#tituloInicio{
+    color: #ffffff;    
+    font-size: 50px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 10px #000;
+    
+}
+
+#tituloInicioDos{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    background-image: radial-gradient(circle, #0FB283, rgb(87, 161, 245));
+}
+
+#padreImgInicio{  
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "foto1 foto2 foto3 foto4";
+    justify-items: center;    
+    column-gap: 5px;   
+    
+}
+
+
+
+#fotoUno{    
+    height: 50%;
+    grid-area: foto1;   
+    cursor: pointer;
+        
+}
+
+#fotoDos{    
+    height: 50%;
+    grid-area: foto2;
+    cursor: pointer;
+}
+
+#fotoTres{    
+    height: 50%;
+    grid-area: foto3;
+    cursor: pointer;
+}
+
+#fotoCuatro{    
+    height: 50%;
+    width: 60%;
+    grid-area: foto4;
+    cursor: pointer;
+}
+
+#esponjaAcero{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    background-color: #0FB283;
+    cursor: pointer;
+}
+
+#esponjaColores{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    background-color: #0FB283;
+    cursor: pointer;
+}
+
+#mopaAcero{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    background-color: #0FB283;
+    cursor: pointer;
+}
+
+#cepilloinodoro{
+    text-align: center;
+    color: white;
+    font-size: 150%;
+    background-color: #0FB283;
+    cursor: pointer;
+}
+
+.linkProducto{
+    text-align: center;
+    color: rgb(33, 44, 199);
+    
+}
+
+#linkProductoUno{
+    background-color: #0FB283;
+
+}
+
+#linkProductoDos{
+    background-color: #0FB283;
+
+}
+
+#linkProductoTres{
+    background-color: #0FB283;
+
+}
+
+#linkProductoCuatro{
+    background-color: #0FB283;
+
+}
+
+
+
+
+
+                        /*DELIVERY*/
+
+#tituloDelivery{
+    color: #ffffff;    
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 10px #000;
+}
+
+#maps{
+    text-align: center;
+    border: 2px black;   
+        
+}
+
+#domicilio{
+    
+    text-align: left;
+    font-size: 30px;
+    margin-left: 100px;
+    color: rgb(255, 255, 255);
+}
+
+#domicilioDos{
+    text-align: left;    
+    margin-left: 100px;
+
+
+}
+
+.inputDomicilio:focus{
+    width: 300px;
+    font-size: 25px;
+    transition: all 2s;
+}
+
+
+
+#confirmacion{
+    text-align: left;
+    font-size: 20px;
+    margin-left: 100px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+
+.textoRangoEnvios{
+    text-align: center;
+    color: white;    
+    background-image: radial-gradient(circle, #0FB283, rgb(87, 161, 245));
+    
+    
+    
+}
+
+
+
+
+                        /*ELABORACION*/
+
+#padreUnoElaboracion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "subtitulo" "videoElaboracion";                        
+
+
+}
+
+.textoLorem{
+    grid-area: videoElaboracion;    
+    color: #ffffff;    
+    font-size: 30px;
+    text-shadow: 5px 5px 10px #000;
+    padding-left: 120px;
+}
+
+
+
+
+
+
+
+
+#tituloElaboracion{
+    color: #ffffff;    
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 10px #000;
+    grid-area: subtitulo;
+    text-align: center;
+}
+
+
+#tituloElaboracionDos{
+    color: #ffffff;    
+    font-size: 40px;
+    text-align: left;
+    padding-left: 120px;
+    text-shadow: 5px 5px 10px #000;
+}
+
+
+.videoElaboracion{
+    padding-left: 100px;
+    padding-top: 70px;
+    display: grid;
+    
+    
+}
+
+iframe {
+    max-width: 100%;
+    height: 700px;
+    width: 700px;
+}
+
+.asideElaboracion{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px #000;
+
+}
+
+
+
+
+                        /*PRODUCTOS*/
+
+
+#tituloProducto{
+    color: #ffffff;    
+    font-size: 40px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 5px 5px 10px #000;
+
+}
+
+#padreUnoProductos{    
+    display: grid;
+    width: 100%;
+    height: 500px;
+    background-color: rgb(87, 161, 245);    
+    grid-template-columns: 50% 50%;
+    grid-template-rows:    1fr 1fr;
+    grid-template-areas:"foto1 foto2"
+                        "foto3 foto4"; 
+
+    
+    row-gap: 10px;    
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+   
+    
+}
+
+#hijoUno{
+    background-color: aqua;
+    grid-area: foto3;
+    height: 80%;
+    width: 30%;
+}
+
+#hijoDos{
+    background-color: rgb(54, 131, 194);
+    grid-area: foto1;
+    height: 70%;
+    width: 30%;
+}
+
+#hijoTres{
+    
+    background-color: rgb(41, 84, 163);
+    grid-area: foto2;
+    height: 70%;
+    width: 30%;
+}
+
+#hijoCuatro{
+    background-color: rgb(34, 50, 189);
+    grid-area: foto4;
+    height: 80%;
+    width: 30%;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#amonioUno{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    background-color: #0FB283;
+    cursor: pointer; 
+}
+
+
+#cepilloMano{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    background-color: #0FB283;
+    cursor: pointer;
+    
+}
+
+#escobaUno{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+    background-color: #0FB283;
+    cursor: pointer;
+    
+}
+
+#amonioCombo{
+    text-align: center;
+    color: white;
+    font-size: 100%;    
+    background-color: #0FB283;
+    cursor: pointer;
+}
+
+
+
+
+                        /*FOOTER*/
+
+footer{
+    background-color: #0FB283;
+    color: #ffff;
+    height: 200px;
+}
+
+
+
+.copy{
+    font-style: oblique;
+    text-align: center;
+    margin: 50px;
+}
+
+.Footer-social ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.social img{
+    width: 50px;
+    height: auto;
+    border-radius: 200%;
+    
+}
+
+.social img:hover{
+    opacity: 50%;
+    
+}
+
+.facebookIcon:hover{
+    
+    width: 70px;
+    transition: all 1s;
+}
+
+.instagramIcon:hover{
+    
+    width: 70px;
+    transition: all 1s;
+}
+
+.whatsappIcon:hover{
+    
+    width: 70px;
+    transition: all 1s;
+}
+
+
+
+
+/*RESPONSIVE (POR AHORA SOLO LA SECCION DE PRODUCTOS)*/
+
+#headerProductos{
+    background-image: url(../img/burbujas.jpg); 
+
+}
+
+#navProductos{
+    background-color: #0FB283;
+}
+
+#ulProductos{
+    list-style-type: none;
+    height: 100%;
+    display: flex;
+
+}
+
+#liProductos{
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainProductos{
+
+    background-color: rgb(87, 161, 245); 
+    
+
+}
+
+#footerProductos{
+    background-color: #0FB283;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*MOBILE*/
+@media only screen and (max-width:600px){
+    headerProductos{
+        height: 400px;
+
+    }
+
+    navProductos{
+        height: 200px;
+        
+    }
+
+    ulProductos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    liProductos{
+        height: 15%;
+        
+    }
+}
+
+
+/*TABLETS*/
+@media only screen and (min-width: 600px){    
+
+    headerProductos{
+        height: 500px;
+    }
+
+    navProductos{
+        height: 100px;
+        text-align: center;
+        
+    
+    }
+
+    ulProductos{
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;    
+
+    }
+
+     }
+                        
