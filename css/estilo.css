@@ -5,25 +5,15 @@
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 104%; }
 
+/*VARIABLES*/
 /*HEADER*/
 header {
   height: 30vh;
-  background-color: #02BDDC;
   color: #ffff;
   text-align: center;
   background-image: url(../img/burbujas.jpg);
   background-size: cover; }
 
-/*
-                        .final{
-                            display: flex;
-                            width: 900px;
-                            text-align: center;
-                            height: 100%;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                        */
 /*LOGO*/
 .Logo {
   display: flex;
@@ -124,7 +114,7 @@ main {
   #mainContacto #tituloContacto {
     text-align: center;
     font-size: 50px;
-    color: #ffff;
+    color: #ffffff;
     padding-bottom: 10px;
     text-shadow: 5px 5px 10px #000;
     padding-top: 30px; }
@@ -176,6 +166,9 @@ main {
   justify-items: center;
   column-gap: 5px; }
   #padreImgInicio #fotoUno {
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
     height: 50%;
     grid-area: foto1;
     cursor: pointer; }
@@ -188,6 +181,9 @@ main {
     #padreImgInicio #fotoUno #linkProductoUno {
       background-color: #0FB283; }
   #padreImgInicio #fotoDos {
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
     height: 50%;
     grid-area: foto2;
     cursor: pointer; }
@@ -200,6 +196,9 @@ main {
     #padreImgInicio #fotoDos #linkProductoDos {
       background-color: #0FB283; }
   #padreImgInicio #fotoTres {
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
     height: 50%;
     grid-area: foto3;
     cursor: pointer; }
@@ -212,6 +211,9 @@ main {
     #padreImgInicio #fotoTres #linkProductoTres {
       background-color: #0FB283; }
   #padreImgInicio #fotoCuatro {
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
     height: 50%;
     width: 60%;
     grid-area: foto4;
@@ -232,10 +234,10 @@ main {
 /*DELIVERY*/
 #maps {
   text-align: center;
-  border: 2px black; }
+  height: 800px; }
   #maps #tituloDelivery {
     color: #ffffff;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     padding-top: 20px;
     text-shadow: 5px 5px 10px #000; }
@@ -291,12 +293,11 @@ main {
 
 #tituloElaboracion {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   padding-top: 20px;
   text-shadow: 5px 5px 10px #000;
-  grid-area: subtitulo;
-  text-align: center; }
+  grid-area: subtitulo; }
 
 .asideElaboracion {
   color: #ffffff;
@@ -308,7 +309,7 @@ main {
 /*PRODUCTOS*/
 #tituloProducto {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   padding-top: 20px;
   text-shadow: 5px 5px 10px #000; }
@@ -320,16 +321,17 @@ main {
   background-color: #57a1f5;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "foto1 foto2" "foto3 foto4";
-  row-gap: 10px;
+  grid-template-areas: "foto1 foto2" "foto3 foto4" "foto5 foto6";
   justify-items: center;
   align-items: center;
   text-align: center; }
   #padreUnoProductos #hijoUno {
-    background-color: aqua;
     grid-area: foto3;
     height: 80%;
-    width: 30%; }
+    width: 30%;
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3); }
     #padreUnoProductos #hijoUno #amonioUno {
       text-align: center;
       color: white;
@@ -337,10 +339,12 @@ main {
       background-color: #0FB283;
       cursor: pointer; }
   #padreUnoProductos #hijoDos {
-    background-color: #3683c2;
     grid-area: foto1;
     height: 70%;
-    width: 30%; }
+    width: 30%;
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3); }
     #padreUnoProductos #hijoDos #cepilloMano {
       text-align: center;
       color: white;
@@ -348,10 +352,12 @@ main {
       background-color: #0FB283;
       cursor: pointer; }
   #padreUnoProductos #hijoTres {
-    background-color: #2954a3;
     grid-area: foto2;
     height: 70%;
-    width: 30%; }
+    width: 30%;
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3); }
     #padreUnoProductos #hijoTres #escobaUno {
       text-align: center;
       color: white;
@@ -359,11 +365,39 @@ main {
       background-color: #0FB283;
       cursor: pointer; }
   #padreUnoProductos #hijoCuatro {
-    background-color: #2232bd;
     grid-area: foto4;
     height: 80%;
-    width: 30%; }
+    width: 30%;
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3); }
     #padreUnoProductos #hijoCuatro #amonioCombo {
+      text-align: center;
+      color: white;
+      font-size: 100%;
+      background-color: #0FB283;
+      cursor: pointer; }
+  #padreUnoProductos #hijoCinco {
+    grid-area: foto5;
+    height: 80%;
+    width: 30%;
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3); }
+    #padreUnoProductos #hijoCinco #tachoSimple {
+      text-align: center;
+      color: white;
+      font-size: 100%;
+      background-color: #0FB283;
+      cursor: pointer; }
+  #padreUnoProductos #hijoSeis {
+    grid-area: foto6;
+    height: 80%;
+    width: 30%;
+    border-style: solid;
+    color: #0FB283;
+    box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3); }
+    #padreUnoProductos #hijoSeis #respuestoMopa {
       text-align: center;
       color: white;
       font-size: 100%;

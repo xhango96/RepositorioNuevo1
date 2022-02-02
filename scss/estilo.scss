@@ -5,39 +5,30 @@
     margin: 0;
     padding: 0;
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-size: 104%;
-                            
+    font-size: 104%;                            
 }
-                        
-                        
+
+                    /*VARIABLES*/
+
+$colorFondoTarjetasProductos: #0FB283;
+$colorTitulos: #ffffff;
+$tamañoTitulos:50px;
+$sombraTitulos:5px 5px 10px #000;
+                    
                         
                         
                                                 /*HEADER*/ 
                         
 header {
-    height: 30vh;
-    background-color: #02BDDC;
+    height: 30vh;    
     color: #ffff;
     text-align: center;
     background-image: url(../img/burbujas.jpg);    
-    background-size: cover;
-                            
+    background-size: cover;                        
                         
                         
 }
-                        
-                        /*
-                        .final{
-                            display: flex;
-                            width: 900px;
-                            text-align: center;
-                            height: 100%;
-                            margin-left: auto;
-                            margin-right: auto;
-                        }
-                        */
-                        
-                        
+
                         
                                                 /*LOGO*/
                         
@@ -47,9 +38,7 @@ header {
     position: absolute;
     top: 0;
     left: 1px;
-    padding-left: 1vh;
-                               
-                            
+    padding-left: 1vh;                                                       
                         
 }
                         
@@ -155,10 +144,11 @@ nav ul li a:hover{
                         
 main{
     height: 2000px;
-    background-color: rgb(87, 161, 245);                                               
+    background-color: rgb(87, 161, 245);                                             
 }
                         
                         
+
                         
                                                 /*CHAT WHATSAPP*/
 .chat{
@@ -188,10 +178,10 @@ main{
 
     #tituloContacto{
         text-align: center;
-        font-size: 50px;
-        color: #ffff;
+        font-size: $tamañoTitulos;
+        color: $colorTitulos;
         padding-bottom: 10px;
-        text-shadow: 5px 5px 10px #000;
+        text-shadow: $sombraTitulos;
         padding-top: 30px;                        
                                
     }
@@ -245,11 +235,11 @@ main{
                         /*INICIO*/
 
 #tituloInicio{
-    color: #ffffff;    
-    font-size: 50px;
+    color: $colorTitulos;    
+    font-size: $tamañoTitulos;
     text-align: center;
     padding-top: 20px;
-    text-shadow: 5px 5px 10px #000;
+    text-shadow: $sombraTitulos;
     
 }
 
@@ -269,6 +259,8 @@ main{
     column-gap: 5px;   
 
     #fotoUno{    
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
         height: 50%;
         grid-area: foto1;   
         cursor: pointer;
@@ -277,18 +269,20 @@ main{
             text-align: center;
             color: white;
             font-size: 150%;
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer;
         }
 
         #linkProductoUno{
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
         
         }
             
     }
     
-    #fotoDos{    
+    #fotoDos{   
+        border-style: solid; color: #0FB283; 
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
         height: 50%;
         grid-area: foto2;
         cursor: pointer;
@@ -297,17 +291,19 @@ main{
             text-align: center;
             color: white;
             font-size: 150%;
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer;
         }
 
         #linkProductoDos{
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
         
         }
     }
 
     #fotoTres{    
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
         height: 50%;
         grid-area: foto3;
         cursor: pointer;
@@ -316,12 +312,12 @@ main{
             text-align: center;
             color: white;
             font-size: 150%;
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer;
         }
 
         #linkProductoTres{
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
         
         }
         
@@ -329,7 +325,9 @@ main{
         
     }
     
-    #fotoCuatro{    
+    #fotoCuatro{   
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
         height: 50%;
         width: 60%;
         grid-area: foto4;
@@ -339,12 +337,12 @@ main{
             text-align: center;
             color: white;
             font-size: 150%;
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer;
         }
 
         #linkProductoCuatro{
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
         
         }
     }
@@ -362,14 +360,15 @@ main{
 
 #maps{
     text-align: center;
-    border: 2px black;   
+    height: 800px;
+     
         
     #tituloDelivery{
-        color: #ffffff;    
-        font-size: 40px;
+        color: $colorTitulos;    
+        font-size: $tamañoTitulos;
         text-align: center;
         padding-top: 20px;
-        text-shadow: 5px 5px 10px #000;
+        text-shadow: $sombraTitulos;
     }
 
     #domicilio{
@@ -421,7 +420,7 @@ main{
 
     
     #tituloElaboracionDos{
-        color: #ffffff;    
+        color: $colorTitulos;    
         font-size: 40px;
         text-align: left;
         padding-left: 120px;
@@ -452,13 +451,12 @@ main{
 
 
 #tituloElaboracion{
-    color: #ffffff;    
-    font-size: 40px;
+    color: $colorTitulos;    
+    font-size: $tamañoTitulos;
     text-align: center;
     padding-top: 20px;
-    text-shadow: 5px 5px 10px #000;
-    grid-area: subtitulo;
-    text-align: center;
+    text-shadow: $sombraTitulos;
+    grid-area: subtitulo;    
 }
 
 
@@ -478,11 +476,11 @@ main{
 
 
 #tituloProducto{
-    color: #ffffff;    
-    font-size: 40px;
+    color: $colorTitulos;    
+    font-size: $tamañoTitulos;
     text-align: center;
     padding-top: 20px;
-    text-shadow: 5px 5px 10px #000;
+    text-shadow: $sombraTitulos;
 
 }
 
@@ -494,75 +492,113 @@ main{
     grid-template-columns: 50% 50%;
     grid-template-rows:    1fr 1fr;
     grid-template-areas:"foto1 foto2"
-                        "foto3 foto4"; 
+                        "foto3 foto4"
+                        "foto5 foto6"; 
 
     
-    row-gap: 10px;    
     justify-items: center;
     align-items: center;
     text-align: center;
+
+
    
-    #hijoUno{
-        background-color: aqua;
+    #hijoUno{  
         grid-area: foto3;
         height: 80%;
         width: 30%;
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
 
         #amonioUno{
             text-align: center;
             color: white;
             font-size: 100%;
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer; 
         }
     }
     
     #hijoDos{
-        background-color: rgb(54, 131, 194);
         grid-area: foto1;
         height: 70%;
         width: 30%;
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
 
         #cepilloMano{
             text-align: center;
             color: white;
             font-size: 100%;
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer;    
         }
     }
 
     #hijoTres{
-    
-        background-color: rgb(41, 84, 163);
         grid-area: foto2;
         height: 70%;
         width: 30%;
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
 
         #escobaUno{
             text-align: center;
             color: white;
             font-size: 100%;
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer;    
         }
     }
 
     #hijoCuatro{
-        background-color: rgb(34, 50, 189);
         grid-area: foto4;
         height: 80%;
         width: 30%;
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
 
         #amonioCombo{
             text-align: center;
             color: white;
             font-size: 100%;    
-            background-color: #0FB283;
+            background-color: $colorFondoTarjetasProductos;
             cursor: pointer;
         }
     }
+
+    #hijoCinco{
+        grid-area: foto5;
+        height: 80%;
+        width: 30%;
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
+
+        #tachoSimple{
+            text-align: center;
+            color: white;
+            font-size: 100%;    
+            background-color: $colorFondoTarjetasProductos;
+            cursor: pointer;
+        }
+    }
+
+    #hijoSeis{
+        grid-area: foto6;
+        height: 80%;
+        width: 30%;
+        border-style: solid; color: #0FB283;
+        box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
+        
+        #respuestoMopa{
+            text-align: center;
+            color: white;
+            font-size: 100%;    
+            background-color: $colorFondoTarjetasProductos;
+            cursor: pointer;            
+        }
+    }
 }
+ 
 
 
 
@@ -570,8 +606,6 @@ img{
     width: 100%;
     height: 100%;
 }
-
-
 
                         /*FOOTER*/
 
