@@ -227,6 +227,26 @@ main {
     #padreImgInicio #fotoCuatro #linkProductoCuatro {
       background-color: #0FB283; }
 
+.imagenAmonioInicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto; }
+
+.textoAmonioInicio {
+  text-align: center;
+  color: white;
+  background-image: radial-gradient(circle, #0FB283, #57a1f5);
+  font-size: 30px; }
+
+.imagenAmonioInicio img {
+  height: 400px;
+  width: 400px;
+  border-style: solid;
+  color: #0FB283;
+  box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3); }
+
 .linkProducto {
   text-align: center;
   color: #212cc7; }
@@ -278,18 +298,27 @@ main {
     text-shadow: 5px 5px 10px #000; }
   #padreUnoElaboracion .textoLorem {
     grid-area: videoElaboracion;
-    color: #ffffff;
+    color: #84d6c8;
     font-size: 30px;
-    text-shadow: 5px 5px 10px #000;
-    padding-left: 120px; }
+    text-shadow: 5px 5px 10px #000; }
   #padreUnoElaboracion .videoElaboracion {
     padding-left: 100px;
     padding-top: 70px;
     display: grid; }
     #padreUnoElaboracion .videoElaboracion iframe {
+      border: 5px solid white;
       max-width: 100%;
       height: 700px;
       width: 700px; }
+
+.carousel-inner {
+  width: 500px;
+  height: 1000px;
+  padding: 100px; }
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px; }
 
 #tituloElaboracion {
   color: #ffffff;
