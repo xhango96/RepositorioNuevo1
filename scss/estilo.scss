@@ -76,6 +76,7 @@ header {
 nav{
     background-color: #0FB283;
     height: 50px;
+    width: 100%;
     text-align: center;
     position: sticky;
     top: 0;
@@ -114,13 +115,12 @@ nav ul li a:hover{
                         /*NAVBAR ELABORACION BOOTSTRAP*/
                         
 .navbar{
-    list-style: none;                           
-                            
+    list-style: none; 
+    width: 100%;
 }
                         
 .navbar ul li{
     display: inline-block;
-    width: 10%;
     height: 100%;                           
                         
 }
@@ -138,7 +138,6 @@ nav ul li a:hover{
     background-color: #87ddbc; 
                             
 }
-                        
                         
                         
                         
@@ -332,7 +331,7 @@ main{
         border-style: solid; color: #0FB283;
         box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
         height: 50%;
-        width: 60%;
+        width: 55%;
         grid-area: foto4;
         cursor: pointer;
 
@@ -392,6 +391,7 @@ main{
 #maps{
     text-align: center;
     height: 800px;
+    
      
         
     #tituloDelivery{
@@ -438,6 +438,12 @@ main{
     }
     
 }
+#mapaDelivery{
+    width: 50%;
+    text-align: center;
+    padding-left: 25%;
+}
+
 
 
 
