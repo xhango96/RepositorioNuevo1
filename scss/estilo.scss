@@ -16,8 +16,6 @@ $tamañoTitulos:50px;
 $sombraTitulos:5px 5px 10px #000;
 
 
-
-
                       
                         
                                                 /*HEADER*/ 
@@ -448,56 +446,38 @@ main{
 
 
                         /*ELABORACION*/
-
-#padreUnoElaboracion{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    grid-template-areas: "subtitulo" "videoElaboracion";                        
-
+    
     
     #tituloElaboracionDos{
         color: $colorTitulos;    
         font-size: 40px;
-        text-align: left;
-        padding-left: 120px;
-        text-shadow: 5px 5px 10px #000;
-    }
-
-    .textoLorem{
-        grid-area: videoElaboracion;    
-        color: #84d6c8;    
-        font-size: 30px;
+        text-align: center;        
+        padding: 10px;        
         text-shadow: 5px 5px 10px #000;
         
     }
 
-    .videoElaboracion{
-        padding-left: 100px;
-        padding-top: 70px;
-        display: grid;   
-
-        iframe {            
-            border: 5px solid rgb(255, 255, 255);
-            max-width: 100%;
-            height: 700px;
-            width: 700px;
-        }
+    .textoLorem{ 
+        background-color: #3fd3a9;          
+        color: #ffffff;        
+        text-shadow: 5px 5px 10px #000;        
+        width: 100%; 
+        border: 2px solid rgb(255, 255, 255);
+        padding: 5px;
+        font-size: 1.5rem;                
+             
     }
 
-}
 
-.carousel-inner{
-    width: 500px;
-    height: 1000px;
-    padding: 100px;
-}
+    .videoElaboracion{        
+       padding: 50px;
+        iframe {            
+            border: 5px solid rgb(255, 255, 255);
+            
+        }
+        
+    }
 
-.carousel-item{
-    height: 65vh;
-    min-height: 300px;
-    
-}
 
 
 
@@ -716,93 +696,40 @@ footer{
 
 
 
-/*RESPONSIVE (POR AHORA SOLO LA SECCION DE PRODUCTOS)*/
 
-#headerProductos{
-    background-image: url(../img/burbujas.jpg); 
 
-}
+     /* Media Queries*/
 
-#navProductos{
-    background-color: #0FB283;
-}
+    html{
+        @media screen and (max-width: 1000px){
+            font-size: 12px;
 
-#ulProductos{
-    list-style-type: none;
-    height: 100%;
-    display: flex;
+        }
+    }
 
-}
+    html{
+        @media screen and (max-width: 450px){
+            font-size: 10px;
+            
+        }
+    }
 
-#liProductos{
-    color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+    .videoElaboracion{
+        @media screen and (max-width: 1000px){            
+            size: 50%;
 
-#mainProductos{
+        }
+    }
 
-    background-color: rgb(87, 161, 245); 
+    .navbar li a{
+        @media screen and (max-width: 415px){
+            font-size: 15px;
+            display: flex;
+
+            
+        }
+    }
+
+   
+
     
-
-}
-
-#footerProductos{
-    background-color: #0FB283;
-}
-
-img{
-    height: 100%;
-    width: 100%;
-}
-
-
-/*MOBILE*/
-@media only screen and (max-width:600px){
-    headerProductos{
-        height: 400px;
-
-    }
-
-    navProductos{
-        height: 200px;
-        
-    }
-
-    ulProductos{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-
-    }
-
-    liProductos{
-        height: 15%;
-        
-    }
-}
-
-
-/*TABLETS*/
-@media only screen and (min-width: 600px){    
-
-    headerProductos{
-        height: 500px;
-    }
-
-    navProductos{
-        height: 100px;
-        text-align: center;
-        
-    
-    }
-
-    ulProductos{
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-content: center;    
-
-    }
-
-     }
-                        
