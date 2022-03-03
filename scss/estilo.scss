@@ -248,7 +248,14 @@ main{
     color: white;
     font-size: 40px;
     background-image: radial-gradient(circle, #0FB283, rgb(87, 161, 245));
+    font-size: 2rem;
+    padding-bottom: 10px;
+    
 }
+
+
+
+
 
 #padreImgInicio{  
     display: grid;
@@ -304,7 +311,7 @@ main{
     #fotoTres{    
         border-style: solid; color: #0FB283;
         box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
-        height: 50%;
+        height: 50%;        
         grid-area: foto3;
         cursor: pointer;
 
@@ -328,8 +335,7 @@ main{
     #fotoCuatro{   
         border-style: solid; color: #0FB283;
         box-shadow: 0 0 20px 7px rgba(0,0,0,0.3);
-        height: 50%;
-        width: 55%;
+        height: 50%;        
         grid-area: foto4;
         cursor: pointer;
 
@@ -360,11 +366,14 @@ main{
 
 .textoAmonioInicio{
     text-align: center;
-        color: white;    
-        background-image: radial-gradient(circle, #0FB283, rgb(87, 161, 245));
-        font-size: 30px;
-        
-        
+    color: white;    
+    background-image: radial-gradient(circle, #0FB283, rgb(87, 161, 245));
+    font-size: 1.5rem;
+      
+}
+
+.padreTextoAmonioInicio{
+    padding-top: 10px;
 }
 
 
@@ -505,6 +514,11 @@ main{
 
 
                         /*PRODUCTOS*/
+
+
+#mainProductos{
+    height: 1600px;
+}
 
 
 #tituloProducto{
@@ -680,6 +694,7 @@ footer{
 
 }
 
+
 .social img{
     width: 50px;
     height: auto;
@@ -691,8 +706,6 @@ footer{
     opacity: 50%;
     
 }
-
-
 
 
 
@@ -728,6 +741,14 @@ footer{
 
             
         }
+    }
+
+    #mainProductos{
+        @media screen and (max-width: 700px){
+            height: 1000px;
+
+        }
+
     }
 
    

@@ -157,7 +157,9 @@ main {
   text-align: center;
   color: white;
   font-size: 40px;
-  background-image: radial-gradient(circle, #0FB283, #57a1f5); }
+  background-image: radial-gradient(circle, #0FB283, #57a1f5);
+  font-size: 2rem;
+  padding-bottom: 10px; }
 
 #padreImgInicio {
   display: grid;
@@ -216,7 +218,6 @@ main {
     color: #0FB283;
     box-shadow: 0 0 20px 7px rgba(0, 0, 0, 0.3);
     height: 50%;
-    width: 55%;
     grid-area: foto4;
     cursor: pointer; }
     #padreImgInicio #fotoCuatro #cepilloinodoro {
@@ -239,7 +240,10 @@ main {
   text-align: center;
   color: white;
   background-image: radial-gradient(circle, #0FB283, #57a1f5);
-  font-size: 30px; }
+  font-size: 1.5rem; }
+
+.padreTextoAmonioInicio {
+  padding-top: 10px; }
 
 .imagenAmonioInicio img {
   height: 400px;
@@ -328,6 +332,9 @@ main {
   text-shadow: 5px 5px 10px #000; }
 
 /*PRODUCTOS*/
+#mainProductos {
+  height: 1600px; }
+
 #tituloProducto {
   color: #ffffff;
   font-size: 50px;
@@ -479,3 +486,7 @@ footer {
   .navbar li a {
     font-size: 15px;
     display: flex; } }
+
+@media screen and (max-width: 700px) {
+  #mainProductos {
+    height: 1000px; } }
